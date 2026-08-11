@@ -1,0 +1,111 @@
+h1{
+    color: #ffffff; /* Cor do texto (hexadecimal) */
+    color: rgb(255, 255, 255); /* Cor do texto (RGB) */
+    
+    font-size: 10px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    font-family: Arial, sans-serif; /* Família da fonte */
+    font-style: normal; /* Estilo da fonte */
+   
+    line-height: 0; /* Altura da linha */
+    
+    letter-spacing: 0; /* Espaçamento entre letras */
+    word-spacing: 0; /* Espaçamento entre palavras */
+    
+    text-align: left; /* Alinhamento do texto */
+    text-transform: none; /* Transformação do texto */
+    text-decoration: none; /* Decoração do texto */
+    text-shadow: none; /* Sombra do texto */
+    
+    padding: 0; /* Espaçamento interno */
+    padding-top: 0; /* Espaçamento interno superior */
+    padding-bottom: 0; /* Espaçamento interno inferior */
+    padding-right: 0; /* Espaçamento interno direito */
+    padding-left: 0; /* Espaçamento interno esquerdo */
+
+    padding: 10px 20px 10px 20px; /* Espaçamento interno (topo, direita, inferior, esquerda) */
+    padding: 10px 20px 30px; /* Espaçamento interno (topo, direita e esquerda, inferior) */
+    padding: 10px 20px; /* Espaçamento interno (topo e inferior, direita e esquerda) */
+    padding: 10px; /* Espaçamento interno (todos os lados) */
+    
+    margin: 0; /* Espaçamento externo */
+    margin-top: 0; /* Espaçamento externo superior */
+    margin-bottom: 0; /* Espaçamento externo inferior */
+    margin-right: 0; /* Espaçamento externo direito */
+    margin-left: 0; /* Espaçamento externo esquerdo */  
+
+    margin: 10px 20px 10px 20px; /* Espaçamento externo (topo, direita, inferior, esquerda) */
+    margin: 10px 20px 30px; /* Espaçamento externo (topo, direita e esquerda, inferior) */
+    margin: 10px 20px; /* Espaçamento externo (topo e inferior, direita e esquerda) */
+    margin: 10px; /* Espaçamento externo (todos os lados) */
+
+    box-sizing: border-box; /* Modelo de caixa (inclui padding e border no tamanho total) */
+    box-sizing: content-box; /* Modelo de caixa (padding e border não incluídos no tamanho total) */
+
+    display: block; /* Exibição do elemento (ocupa toda a largura disponível, pode definir width, height, margin e sempre ocupa toda a sua linha) */
+    display: inline; /* Exibição do elemento (ocupa apenas o espaço necessário, não pode definir width e height, mas pode definir margin) */
+    display: inline-block; /* Exibição do elemento (ocupa apenas o espaço necessário, pode definir width, height e margin) */
+
+    position: static; /* (Padrão) Não aceita valores de top, botton, right e left, ele fica fixado no topo */
+    position: fixed; /* Fixa elementos na tela, ao mover ela, por estar fixada ela anda junto com a página, aceita propriedade (top, botton, left, right) */
+    position: sticky; /* Age como um adesivo, fixa o elemento só onde você determinar as suas propriedades (top, bottom, left, right) */
+    position: relative; /* Posição relativa a posição inicial, se  posicionando a uma posição relativa a ele */
+    position: absolute; /* Posição absoluta (fixa) algum elemento ou página; 
+    Se não tiver pai / pai for static - Posiciona referente a página
+    Se o pai não fir static -posicionamento refente ao pai */  
+}                                                                          
+    /* PSEUDO ELEMENTO
+    ::placeholder - Define o estilo do texto de espaço reservado dentro de inputs de formulário.
+    ::first-letter -  Estiliza apenas a primeira letra de um bloco de texto.
+    ::first-line - Estiliza a primeira linha de um bloco de texto.
+    ::selection - Altera a cor de fundo e do texto quando o usuário seleciona o elemento com o mouse.
+    ::before - Cria um elemento "virtuais" Antes do conteúdo de um elemento real. Usados para criar detalhes visuais e ícones e exigem a propriedade (content)
+    ::after - Cria um elemento "virtuais" Depois do conteúdo de um elemento real. Usados para criar detalhes visuais e ícones e exigem a propriedade (content)
+
+    /* PSEUDO CLASSES
+    :active - quando o elemento esta ativo, ou seja, está sendo pressionado
+    :visited - seleciona o link que foi visitado
+    :hover - quando o mouse passe em cima do elemento
+    :checked - usado em radio / checkbox / select
+    :disabled - elemento desabilitado / button / input
+    :enabled - elemento esta habilitado
+    :focus - e aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuario seleciona o elemento
+    :read-only - seleciona input ou.textarea que sao apenas . leitura
+    :empty - elemento que nao tem filho
+    :first-child - primeiro filho / ex: primeira li de uma ul / primeiro span de uma div
+    :first-of-type - primeiro elemento de seu.tipo entre .os.filhos de seu.elemento pai.
+    :last-child - ultimo filho
+    :last-of-type - último elemento de seu tipo entre os filhos de seu elemento pai
+    :not() - estiliza.os.elementos, exceto o que esta dentro do ()
+    :nth-child() - seleciona o elemento baseado na sua posicão Ex: :nth-child(3)
+    :nth-last-child() - seleciona o elemento baseado na sua posição, contando de tras para frente. */    
+    
+
+    /*  RESPONSIVIDADE
+    
+    @media() no CSS é a base do design responsivo, permitindo aplicar estilos apenas quando certas condições do dispositivo são atendidas (como largura de tela ou orientação). Ela verifica essas características e altera o layout para desktops, celulares e impressões.
+    
+    All - Para todos os dispositivos.
+    Braille - Para dispositivos .tateis.
+    Embossed - Para dispositivos que imprimem em braile.
+    Handheld - Para dispositivos portateis, geralmente com telas pepgenas e banda limitada.
+    Print - Para impressao em papel.
+    Projection - Para apresentaçoes como PPS.
+    Screen - Para monitores ou dispositivos .com telas coloridas e resolucao adequada.
+    Speech - Para sintetizadores de voz As CSS 2 tem uma especificacao de CSS chamada Aural, onde podemos formatar a voz dos sintetizadores
+
+        ORIENTAÇÃO
+    portrait - altura maior que a largura
+    landscape - largura maior que a altura
+    */ 
+
+    @media screen and (max-width: 600px) and (orientation: landscape) {
+        div { background-color: aquamarine;}
+    }
+
+    /* CALC - É uma função usada na folha de estilos de sites (CSS) para realizar cálculos dinâmicos diretamente no código */
+    div {
+    height: calc(100vh - 200px);
+    width: calc(50vw + 200px);
+    margin: calc(100px + 40vh / 2);
+    }
