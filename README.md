@@ -38,7 +38,7 @@
 
 <p align="center">
   <img
-    src=""
+    src="https://github.com/WesleyLourenco21/gabarito-das-aulas/blob/main/assets/Gabarito.png?raw=true"
     alt="Versão Desktop"
     width="700"
   />
