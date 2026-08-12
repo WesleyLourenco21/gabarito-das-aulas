@@ -142,3 +142,28 @@ function nomeNaTela() {
 }
 
 nomeNaTela() // Chamando a função nomeNaTela
+
+/* DOM - Document Object Model
+
+    - É uma interface de programação para documentos HTML e XML.
+    - Representa a estrutura do documento como uma árvore de nós, onde cada nó é um objeto que representa uma parte do documento (elementos, atributos, textos, etc).
+    - Permite acessar e manipular o conteúdo e a estrutura do documento através de JavaScript.
+
+*/
+
+/* document html
+
+    - Acessa o documento HTML e permite manipular seus elementos.
+
+*/
+
+getElementById("titulo") // Acessa o elemento com o id "titulo"
+getElementByClassName("titulo") // Acessa os elementos com a classe "titulo"
+getElementByTagName("h1") // Acessa os elementos com a tag "h1"
+getElementByName("input") // Acessa os elementos com o nome "input"
+
+querySelector("#titulo") // Acessa o primeiro elemento com o id "titulo"
+querySelector(".titulo") // Acessa o primeiro elemento com a classe "titulo"
+querySelector("h1") // Acessa o primeiro elemento com a tag "h1"
+querySelector("input") // Acessa o primeiro elemento com o nome "input"
+querySelectorAll(".titulo") // Acessa todos os elementos com a classe "titulo"
