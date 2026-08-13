@@ -167,3 +167,86 @@ querySelector(".titulo") // Acessa o primeiro elemento com a classe "titulo"
 querySelector("h1") // Acessa o primeiro elemento com a tag "h1"
 querySelector("input") // Acessa o primeiro elemento com o nome "input"
 querySelectorAll(".titulo") // Acessa todos os elementos com a classe "titulo"
+
+const input = document.getElementById("main-input");
+
+console.log(input)
+
+const elements = document.getElementsByClassName("paragraph-js");
+
+console.log(elements)
+
+const titulo = document.getElementsByTagName("h1");
+
+console.log(titulo)
+
+const titulos = document.getElementsByName("meu-titulo");
+
+console.log(titulos)
+
+const query = document.querySelector("p");
+//document.querySelector(".paragraph-js");
+//document.querySelector("#main-input");
+//document.querySelector("button.paragraph-js");
+
+console.log(query)
+
+const queryall = document.querySelectorAll("h1, p, input,button");
+
+console.log(queryall)
+
+/* Alterando e Acessando Textos
+
+textContent: Acessa ou altera o conteúdo de texto de um elemento, incluindo tags HTML.
+innerText: Acessa ou altera o conteúdo de texto de um elemento, mas ignora tags HTML e considera apenas o texto visível.
+innerHTML: Acessa ou altera o conteúdo HTML de um elemento, incluindo tags HTML e texto.
+
+*/
+
+const element = document.querySelector("h1")
+
+element.textContent = "Alterando o texto do h1 com textContent" // Altera o texto do h1, incluindo tags HTML
+element.innerText = "Alterando o texto do h1 com innerText" // Altera o texto do h1, mas ignora tags HTML
+element.innerHTML = "<span>Alterando o texto do h1 com innerHTML</span>" // Altera o conteúdo HTML do h1, incluindo tags HTML
+
+console.log(element.textContent) // Só HTML, não leva em conta o CSS
+console.log(element.innerText) // Leva em conta o CSS, só o que é visível
+console.log(element.innerHTML) // Trás tudo, incluindo tags HTML
+
+/* Alterando CSS(estilos) de um Elemento
+    
+    - style: Acessa ou altera os estilos CSS de um elemento.
+    
+*/
+
+const button = document.querySelector("button")
+
+button.style.color = "black" // Altera a cor do texto do botão para preto.
+button.style.backGround = "purple" // Altera a cor do fundo do botão para roxo.
+button.style.fontSize = "20px" // Aletera o tamanho da fonte do botão para 20 px.
+
+/* Eventos 
+
+Um evento é uma ação ou ocorrência detectada pelo sistema — como um clique do mouse, o pressionar de uma tecla ou um aviso do sistema operacional —, que serve de gatilho para o software executar uma resposta específica de código.
+
+Todo evento começa com "ON" e é seguido pelo nome do evento, como "onclick", "onmouseover", "onkeydown", etc.
+
+*/
+
+const input = document.querySelector("#main-input")
+
+function cliqueiNoBotao() {
+    alert("Você clicou no botão.")
+}
+
+function digiteiNoInput() {
+    console.log("Digitei no Input.")
+}
+
+function digiteiNoInput() {
+    console.log(input.value) // Mostra no console o que foi digitado no input.
+}
+
+function cliqueiNoBotao() {
+    console.log(input.value) // Mostra no console a mensagem "Você clicou no botão!".
+}
