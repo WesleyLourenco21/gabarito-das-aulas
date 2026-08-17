@@ -250,3 +250,28 @@ function digiteiNoInput() {
 function cliqueiNoBotao() {
     console.log(input.value) // Mostra no console a mensagem "Você clicou no botão!".
 }
+
+/* addEventListener
+
+    - É um método que permite adicionar um ou mais ouvintes de eventos a um elemento, sem substituir os ouvintes de eventos existentes.
+    - Sintaxe: element.addEventListener(event, function, useCapture)
+
+*/
+
+const input = document.querySelector("#main-input") 
+const select = document.querySelector("select") 
+const button = document.querySelector(".main-button") 
+
+select.addEventListener("change", function(){ 
+    console.log("troquei de valor") // Mostra no console a mensagem "troquei de valor" quando o valor do select for alterado.
+}) // Adiciona um ouvinte de evento ao elemento select, que será acionado quando o valor do select for alterado.
+
+const input = document.querySelector("#main-input")
+const select = document.querySelector("select")
+const button = document.querySelector(".main-button")
+
+function troqueiValor(event){ // Função que será chamada quando o evento "change" for acionado no elemento select.
+    console.log(event) // Mostra no console o evento que foi acionado.
+}
+
+select.addEventListener("change", troqueiValor)  
