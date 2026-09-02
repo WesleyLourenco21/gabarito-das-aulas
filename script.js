@@ -233,7 +233,7 @@ Todo evento começa com "ON" e é seguido pelo nome do evento, como "onclick", "
 
 */
 
-const input = document.querySelector("#main-input")
+const inputFirst = document.querySelector("#main-input")
 
 function cliqueiNoBotao() {
     alert("Você clicou no botão.")
@@ -258,20 +258,48 @@ function cliqueiNoBotao() {
 
 */
 
-const input = document.querySelector("#main-input") 
-const select = document.querySelector("select") 
+const inputSecond = document.querySelector("#main-input") 
+const selectFirst = document.querySelector("select") 
 const button = document.querySelector(".main-button") 
 
 select.addEventListener("change", function(){ 
     console.log("troquei de valor") // Mostra no console a mensagem "troquei de valor" quando o valor do select for alterado.
 }) // Adiciona um ouvinte de evento ao elemento select, que será acionado quando o valor do select for alterado.
 
-const input = document.querySelector("#main-input")
-const select = document.querySelector("select")
-const button = document.querySelector(".main-button")
+const inputCurrency = document.querySelector("#main-input")
+const selectCurrency = document.querySelector("select")
+const buttonConvert = document.querySelector(".main-button")
 
 function troqueiValor(event){ // Função que será chamada quando o evento "change" for acionado no elemento select.
     console.log(event) // Mostra no console o evento que foi acionado.
 }
 
-select.addEventListener("change", troqueiValor)  
+selectCurrency.addEventListener("change", troqueiValor)  // Adiciona um ouvinte de evento ao elemento select, que será acionado quando o valor de select for alterado, chamando a função troqueiValor.
+
+const inputCurrencyValue = Number( // Converte o valor digitado no input para número.
+        document.querySelector(".currency-input").value // Acessa o valor do input com a classe "currency-input"
+)
+
+    if (currencyFrom === "real") { // Se a moeda de origem for real, converte o valor.
+        valueInReal = inputCurrencyValue // Atribui o valor digitado no input à varipável valueInReal.
+            currencyValueToConvert.innerHTML = Intl.NumberFormat("pt-BR", { // Formata o valor para o padrão desejado.
+            style: "currency", // Define o estilo de formatação como moeda.
+            currency: "BRL" // Define a moeda escolhida.
+        }).format(inputCurrencyValue) // Formata o valor digitado no input para o padrão escolhido.
+    }
+
+    if (currencyTo === "dolar") { // Se a moeda de origem for real, converte o valor.
+        valueConverted = valueInReal / dolarToday // Converte o valor em real para dólar, dividindo pelo valor do dólar.
+            currencyValueConverted.innerHTML = Intl.NumberFormat("en-US", { // Formata o valor para o padrão desejado.
+            style: "currency", // Define o estilo de formatação como moeda.
+            currency: "USD" // Define a moeda escolhida.
+        }).format(valueConverted) // Formata o valor convertido para o padrão escolhido.
+    }
+
+    const currencyName = document.getElementById("currency-name") // Acessa o elemento com o id. ex - "currency-name"
+    const currencyImage = document.querySelector(".currency-image") // Acessa o elemento com a classe.ex - "currency-image"
+
+    if (currencySelect.value == "dolar") { // se o valor do select for igual a "dolar", altera o nome e a imagem da moeada.
+        currencyName.innerHTML = "Dólar Americano" // Altera o nome da moeda para "Dólar Americano"
+        currencyImage.src = "./assets/Logo Estados Unidos.png" // Altera a imagem da moeda para a bandeira dos Estados Unidos.
+    }
