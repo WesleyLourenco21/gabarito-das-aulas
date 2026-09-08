@@ -303,3 +303,22 @@ const inputCurrencyValue = Number( // Converte o valor digitado no input para n�
         currencyName.innerHTML = "Dólar Americano" // Altera o nome da moeda para "Dólar Americano"
         currencyImage.src = "./assets/Logo Estados Unidos.png" // Altera a imagem da moeda para a bandeira dos Estados Unidos.
     }
+
+    /* Math - Matemática
+    
+    pow(2,2) - Potência - 2 elevado a 2 = 4
+    sqrt(4) - Raiz Quadrada - Raiz quadrada de 4 = 2
+    PI - Número Pi - 3,14
+    ceil(4.3) - Arredonda para cima - 5
+    floor(4.7) - Arredonda para baixo - 4
+    random() - Número aleatório entre 0 e 1 - 0,5
+
+    */
+
+    const result = Math.pow(2, 2) // 2 elevado a 2 = 4
+    const result2 = Math.sqrt(4) // Raiz quadrada de 4 = 2
+    const result3 = Math.PI // Número Pi = 3,14
+    const result4 = Math.ceil(4.3) // Arredonda para cima = 5
+    const result5 = Math.floor(4.7) // Arredonda para baixo = 4
+    const result6 = Math.random() // Número aleatório entre 0 e 1 = 0,5
+
