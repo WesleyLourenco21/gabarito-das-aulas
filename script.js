@@ -322,3 +322,95 @@ const inputCurrencyValue = Number( // Converte o valor digitado no input para n�
     const result5 = Math.floor(4.7) // Arredonda para baixo = 4
     const result6 = Math.random() // Número aleatório entre 0 e 1 = 0,5
 
+
+    /* Operadores Aritiméticos
+
+    + Adção
+    - Subtração
+    * Multiplicação
+    / Divisão
+    % Resto da divisão
+    ++ Incremento
+    -- Decremento
+    ** Exponenciação
+
+    */
+
+    const sum = 10 + 5 // Soma de 10 + 5 = 15
+    const sub = 10 - 5 // Subtração de 10 - 5 = 5
+    const mult = 10 * 5 // Multiplicação de 10 * 5 = 50
+    const div = 10 / 5 // Divisão de 10 / 5 = 2
+    
+    const resto = 10 % 3 // Resto da divisão de 10 poe 3 = 1
+
+    let incremento = 10
+    incremento++ // Incremento de 10 + 1 = 11
+
+    let decremento = 10
+    decremento-- // Decremento de 10 - 1 = 9
+
+    let expo = 3 ** 10 // Exponenciação de 3 elevado a 10 = 59049
+
+    /* Operadores de Atribuição 
+
+     = Atribuição
+    += Adição e Atribuição
+    -= Subtração e Atribuição
+    *= Multiplicação e Atribuição
+    /= Divisão e Atribuição
+    %= Resto
+
+    */
+
+    let soma = 20 
+    soma += 80 // A soma dos dois igual a 100
+
+    /* Operadores de Comparação
+
+    == Igual - Compara o VALOR, mas não o TIPO
+    === Totalmente Igual - Ele compara o VALOR e o TIPO
+
+    */
+
+    const firstNumber1 = 30
+    const secondNumber2 = 30
+
+    if(firstNumber1 == secondNumber2) {
+        console.log("Eles são iguais") // Correto
+    } else {
+        console.log("Não são iguais") // Errado
+    }
+
+    const firstNumber3 = 30 
+    const secondNumber4 = "30"
+
+    if(firstNumber3 === secondNumber4) {
+        console.log("Eles são iguais") // Errado
+    } else {
+        console.log("Não são iguais") // Correto
+    }
+
+    /*
+
+    != Diferente - Ele compara o VALOR, mas não o TIPO
+    !== Totalmente Diferente - Compara o VALOR e o TIPO
+
+    */
+
+    const fNumber1 = 30
+    const sNumber2 = 40
+
+    if(fNumber1 != sNumber2) {
+        console.log("Sim, são diferente") // Correto
+    } else {
+        console.log("Não, são diferente") // Errado
+    }
+
+    const fNumber3 = 30
+    const sNumber4 = "30"
+
+    if(fNumber3 !== sNumber4) {
+        console.log("Sim, são diferente") // Errado
+    } else {
+        console.log("Não, não são diferente") // Correto
+    }
