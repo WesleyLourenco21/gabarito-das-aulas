@@ -414,3 +414,69 @@ const inputCurrencyValue = Number( // Converte o valor digitado no input para n�
     } else {
         console.log("Não, não são diferente") // Correto
     }
+
+    /* 
+
+    > - Maior
+    < - Menor
+    >= - Maior ou Igual
+    <= - Menor oi Igual
+
+    */
+
+    const mai = 20
+    const men = 30
+
+    console.log(mai > men) // Errado Não é Maior
+    console.log(mai < men) // Certo é Menor
+
+    const mai1 = 20
+    const men2 = 20
+
+    console.log(mai >= men) // Certo Não é Maior porém é Igual
+    console.log(mai <= men) // Certo Não é Menor porém é Igual
+
+    const mai3 = 30
+    const men4 = 20
+
+    console.log(mai >= men) // Certo é Maior porém não é Igual
+    console.log(mai <= men) // Errado Não é Menor e Não é Igual
+
+    /* Operadores Lógico 
+
+    && - E - Pessoa Exigente
+
+    True && True = True
+    True && False = False
+    False && False = False
+
+    || - Ou - Tanto Faz
+
+    True || True = True
+    True || False = True
+    False || False = False
+
+    ! - Negação
+
+    !True = False
+    !False = True
+
+    */
+
+    console.log(true && true && true && true) // true
+    console.log(true && true && false && true) // false
+    console.log(false && false && false && false) // false
+
+    console.log(true || true || true || true) // true
+    console.log(true || true || false || true) // true
+    console.log(false || false || false || false) // false
+
+    console.log(!false) // true
+    console.log(!true) // false
+
+    /* Operadores Type Of e Delete
+
+    typeof - Mostra os tipos dos dados.
+    delete - Apaga os dados ou um dado especifico.
+
+    */
